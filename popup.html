@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Simple Words + Smart Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="sw-sn-popup-root">
+    <div class="sw-sn-popup-container">
+      <h1 class="sw-sn-popup-title">Simple Words + Smart Notes</h1>
+      <p class="sw-sn-popup-text">
+        Set your AI API key to explain words and generate YouTube notes.
+      </p>
+
+      <label class="sw-sn-field-label" for="apiKey">OpenAI API key</label>
+      <input
+        id="apiKey"
+        type="password"
+        class="sw-sn-input"
+        placeholder="sk-..."
+        autocomplete="off"
+      />
+
+      <button id="saveApiKey" class="sw-sn-button">Save</button>
+
+      <p id="status" class="sw-sn-status"></p>
+
+      <p class="sw-sn-popup-hint">
+        Your key is stored only in this browser using Chrome sync storage. For
+        production, consider routing requests through your own backend.
+      </p>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
+
